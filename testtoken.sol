@@ -116,10 +116,10 @@ interface IUniswapV2Router02 {
     ) external payable returns (uint256 amountToken, uint256 amountETH, uint256 liquidity);
 }
 
-contract DrunkDoge is Context, IERC20, Ownable {
+contract TestToken is Context, IERC20, Ownable {
     using SafeMath for uint256;
-    string private constant _name = unicode"DrunkDoge";
-    string private constant _symbol = "DRUNK";
+    string private constant _name = unicode"TestToken";
+    string private constant _symbol = "TEST";
     uint8 private constant _decimals = 18;
     mapping(address => uint256) private _rOwned;
     mapping(address => uint256) private _tOwned;
